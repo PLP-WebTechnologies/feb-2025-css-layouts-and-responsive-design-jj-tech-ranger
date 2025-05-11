@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JJ's Hobbies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 1em;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #666;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+      padding: 2em;
+    }
+
+    .card {
+      background: white;
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin-top: 0.5em;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2em auto;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .profile h2 {
+      margin-top: 1em;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to JJ's Hobby World! ⛹️‍♀️👨‍🏋️✨</h1>
+  </header>
+  <nav>
+    <a href="#skating">Skating ⛹️</a>
+    <a href="#karate">Karate 🤼</a>
+    <a href="#reading">Reading 📖</a>
+  </nav>
+
+  <section class="profile">
+    <img src="img.png" alt="JJ's Photo" />
+    <h2>Hello, I'm JJ! ✨</h2>
+    <p>A lady who loves skating, karate, and reading novels! ⛹️✊📖</p>
+  </section>
+
+  <main class="container">
+    <section class="card" id="skating">
+      <img src="https://images.unsplash.com/photo-1610901289939-4e7ff8c30be6" alt="Skating">
+      <h2>Skating</h2>
+      <p>Skating makes me feel free and alive! ⛹️✨</p>
+    </section>
+    <section class="card" id="karate">
+      <img src="https://images.unsplash.com/photo-1583422409516-289b9f48f95b" alt="Karate">
+      <h2>Karate</h2>
+      <p>Karate teaches me discipline, strength, and confidence! 🤼‍♀️💪</p>
+    </section>
+    <section class="card" id="reading">
+      <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="Reading Novels">
+      <h2>Reading Novels</h2>
+      <p>I love diving into different worlds through novels! 📖🌟</p>
+    </section>
+  </main>
+  <footer>
+    <p>Made with ❤️ by JJ - Happy Coding! 💻</p>
+  </footer>
+</body>
+</html>
